@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+</head> 
+
+<body style="background: url(https://images.unsplash.com/photo-1496680392913-a0417ec1a0ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+" >
+    <section class="row pb-5" >
+        <h1 class="text-light bg-dark text-center mt-5 w-auto mx-auto px-3 py-1 rounded-3" >Image Editor Edit Your Cool Images</h1>
+        <div class=" d-flex  justify-content-center align-items-center gap-5">
+            <div class="card " >
+                <img src="https://img.freepik.com/free-icon/user_318-563642.jpg?w=360" alt="profile_pic" id="profile_pic" width="500px" height="500px" class="img-fluid border p-2">
+                <button class="btn btn-primary" id="OpenImgUpload" onclick="Open_Upload()">Image Upload</button>
+                <button class="btn btn-danger mt-3" id="OpenImgUpload" onclick="Download_Profile()">Download Image</button>
+
+                <input type="file" id="Image_Upload" class="d-none" onchange="Image_Change()"  >
+            </div>
+            <div class="card mt-5 p-5 d-flex justify-content-center" >
+                <h1 class="card-heading text-bg-danger rounded-4 px-3 py-1">
+                    Image Editor
+                </h1>
+                <div class="card-body">
+                </div>
+                <div class="d-flex justify-content-center flex-column row-gap-3">
+                    <label for=""> Rounded-Border </label>
+                    <input type="range"   name="" id="border" min="0px" max="150px" value="0">
+                    <label for=""> Brightness </label>
+                    <input type="range" id="bright" min="0" max="100" value="0">
+                    <label for=""> Contrast </label>
+                    <input type="range" id="contract" min="0" max="100" value="0">
+                    <label for=""> Saturation </label>
+                    <input type="range">
+                    <label for=""> Hue </label>
+                    <input type="range">
+                    <label for=""> Blur </label>
+                    <input type="range">
+                    <label for=""> Invert </label>
+                    <input type="range">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="index.js" ></script>
+</body>
+
+</html>
